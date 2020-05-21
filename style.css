@@ -1,0 +1,192 @@
+*{
+    font-family: "Rimouski";
+    font-size:100%;
+}
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
+
+body{
+    width: 100%;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.container{
+    position: center;
+    width: 400px;
+    background-color: #FFF;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+    padding-bottom : 50px;
+    left: 50%;
+
+}
+
+.app-title{
+    position: relative;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    left:50%;
+    margin-left: -175.5px;
+}
+
+.app-title p{
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: #d1d5d9;
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -175.5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.weather-icon{
+    width: 350px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.weather-icon img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.temperature-value{
+    width: 350px;
+    height:60px;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.temperature-value p{
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+
+}
+
+.temperature-description p{
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+
+}
+
+.location p{
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.button-div{
+    padding-top: 20px;
+    font-family: Tahoma, Geneva, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+.button-click{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: transparent;
+    position: relative;
+    background-color: #70cec7;
+    color: white;
+    font-size: 20px;
+}
+
+.button-click:hover {
+    transform: scale(1.05);
+    background-color: #28cace;
+}
+
+#date-time {
+    font-family: Tahoma, Geneva, sans-serif;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    position: relative;
+}
+
+.forecast{
+    position: relative;
+    width: 400px;
+    height: 800px;
+    background-color: #FFF;
+
+    border-radius: 10px;
+    left: 50%;
+    margin-left: -175.5px;
+    top: 20px;
+}
+
+

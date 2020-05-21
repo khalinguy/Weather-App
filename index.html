@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="description" content="Weather Web Application">
+    <meta name="keywords" content="Weather, Weather API, Weather App, jQuery, HTML, CSS, JavaScript">
+    <meta name="author" content="Khanh Linh Nguyen">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="MobileFriendly" content="true">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <body>
 
+<div class="container">
+    <div class="app-title">
+        <p>Weather Forecast</p>
+    </div>
+    <div class="notification"> </div>
+    <div class="weather-container">
+        <div class="weather-icon">
+            <img src="" alt="">
+        </div>
+        <div class="temperature-value">
+            <p>- °<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+            <p> - </p>
+        </div>
+        <div class="location">
+            <p>-</p>
+        </div>
+        <div id="date-time">
+        </div>
+    </div>
+    <div class="button-div">
+        <button class='button-click' type="button">Forecast</button>
+    </div>
+    <div class="forecast-weather">
+
+    </div>
+</div>
+
+<script src="weather.js"></script>
 </body>
 </html>
