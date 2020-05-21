@@ -179,11 +179,11 @@ tempElement.addEventListener("click", function(){
 
             //Change Data
             document.getElementById(`temp-${0}`).innerHTML
-                = `<span style="color: #293251;">${maxFTemp[0]}°<span>F</span><br><span style="color: #f0f0ef;">${minFTemp[0]}°<span>F</span></span></br></span>`;
+                = `<span style="color: #293251;">${maxFTemp[0]}°<span>F</span><br><span style="color: #2A4A6D;">${minFTemp[0]}°<span>F</span></span></br></span>`;
             document.getElementById(`temp-${1}`).innerHTML
-                = `<span style="color: #293251;" >${maxFTemp[1]}°<span>F</span><br><span style="color: #f0f0ef;">${minFTemp[1]}°<span>F</span></span></br></span>`;
+                = `<span style="color: #293251;">${maxFTemp[1]}°<span>F</span><br><span style="color: #2A4A6D;">${minFTemp[1]}°<span>F</span></span></br></span>`;
             document.getElementById(`temp-${2}`).innerHTML
-                = `<span style="color: #293251;">${maxFTemp[2]}°<span>F</span><br><span style="color: #f0f0ef;">${minFTemp[2]}°<span>F</span></span></br></span>`;
+                = `<span style="color: #293251;">${maxFTemp[2]}°<span>F</span><br><span style="color: #2A4A6D;">${minFTemp[2]}°<span>F</span></span></br></span>`;
         }
 
     } else {
@@ -191,11 +191,11 @@ tempElement.addEventListener("click", function(){
         weather.temperature.unit = "celsius";
         if(buttonStatus) {
             document.getElementById(`temp-${0}`).innerHTML
-                = `<span style="color: #293251;">${maxTemp[0]}°<span>C</span><br><span style="color: #2B3F60;">${minTemp[0]}°<span>C</span></span></br></span>`;
+                = `<span style="color: #293251;">${maxTemp[0]}°<span>C</span><br><span style="color: #2A4A6D;">${minTemp[0]}°<span>C</span></span></br></span>`;
             document.getElementById(`temp-${1}`).innerHTML
-                = `<span style="color: #293251;">${maxTemp[1]}°<span>C</span><br><span style="color: #2B3F60;">${minTemp[1]}°<span>C</span></span></br></span>`;
+                = `<span style="color: #293251;">${maxTemp[1]}°<span>C</span><br><span style="color: #2A4A6D;">${minTemp[1]}°<span>C</span></span></br></span>`;
             document.getElementById(`temp-${2}`).innerHTML
-                = `<span style="color: #293251;">${maxTemp[2]}°<span>C</span><br><span style="color: #2B3F60;">${minTemp[2]}°<span>C</span></span></br></span>`;
+                = `<span style="color: #293251;">${maxTemp[2]}°<span>C</span><br><span style="color: #2A4A6D;">${minTemp[2]}°<span>C</span></span></br></span>`;
         }
     }
 });
@@ -250,7 +250,7 @@ function createElement(a, value) {
                             font-size: 25px;">
                             <div id = 'temp-${a}'>
                                 <span style=" color: #293251;">${maxTemp[a]}°<span>C</span></span>
-                                <span style="color: #2B3F60;text-align:start">
+                                <span style="color: #2A4A6D;text-align:start">
                                 <br>${minTemp[a]}°<span>C</span></br></span></th> 
                             </div>    
                     <th><p class="des" style="position: relative; text-align: center; font-weight: lighter;
@@ -275,7 +275,7 @@ function createElement(a, value) {
                             font-size: 25px; font-family: Tahoma, Geneva, sans-serif;">
                             <div id = 'temp-${a}'>
                                 <span style=" color: #293251;">${maxFTemp[a]}°<span>F</span></span>
-                            <span style=" color: #2B3F60; ;text-align:start">
+                            <span style=" color: #2A4A6D; ;text-align:start">
                                 <br>${minFTemp[a]}°<span>F</span></br></span></th> 
                              </div>   
                     <th><p class="des" style="position: relative; text-align: center; font-weight: lighter;
