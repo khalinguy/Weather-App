@@ -1,10 +1,18 @@
 # Weather-App
 
+
+# Stack
+
+⭐ HTML<br/>
+⭐ CSS<br/>
+⭐ JavaScript<br/>
+⭐ jQuery 3.4.1<br/>
+
 # Features:
 
-✔️  Access current location with Geolocation</br>
-✔️  Present current weather and 3 following-day weather forecasts</br> 
-✔️  Temperature's unit switch between Celsius and Fahrenheit</br>
+✔️  Get Current Weather Using Device's Location</br>
+✔️  Weather Forecasts for 3 Following Days</br> 
+✔️  Convert Temperature Unit between Celsius and Fahrenheit</br>
 
 # Demo:
 
