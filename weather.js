@@ -26,7 +26,7 @@ weather.temperature = {
 
 //FORECAST BUTTON
 var buttonStatus = false;
-
+var buttonEnable = false;
 //Get current time
 var day = new Date();
 
@@ -45,16 +45,18 @@ $(document).ready(function(){
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 function checkGeolocation (){
-    if ('geolocation' in navigator) {
-        navigator.geolocation.getCurrentPosition(setPositionCurrent, showError);
-    } else {
-        notificationElement.style.display = "block";
-        notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
-    }
+     buttonElement.style.display = 'none';
+     if ('geolocation' in navigator) {
+         navigator.geolocation.getCurrentPosition(setPositionCurrent, showError);
+
+     } else {
+         notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
+     }
 }
 
 // SET USER'S POSITION
 function setPositionCurrent(position){
+    buttonElement.style.display = 'block';
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     getWeather(latitude, longitude);
@@ -155,7 +157,8 @@ buttonElement.addEventListener("click", function () {
         } else {
             $(".forecast").remove();
             buttonStatus = false;
-            document.querySelector('.container').style.height = '400px';
+            document.querySelector('.container').style.height = '450px';
+
         }
     });
 
@@ -293,3 +296,4 @@ function createElement(a, value) {
 Array.prototype.insert = function ( index, item ) {
     this.splice( index, 0, item );
 };
+
